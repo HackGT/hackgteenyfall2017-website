@@ -225,17 +225,68 @@ h3.details {
 }
 
 a:link {
-    color: #f1c40f;
+    color: #F783CF;
 }
 
 a:visited {
     color: #bdc3c7;
 }
 
-/*a:hover {
-    color: red;
+.button {
+	display: inline-block;
+	padding: 0 .5em;
+	border: solid white 0.25em;
+	border-radius: 0.25em;
+	background-color: rgba(255, 255, 255,0);
+	background-color: white;
+
+	/*height:10px;*/
+	/*width:50px;*/
+	cursor:pointer;
+	color: white;
+	font-weight: bold;
+	/*padding: 0;*/
+	/*margin: 0;*/
+	overflow: hidden;
+	position: relative;
+
 }
 
-a:active {
-    color: yellow;
-}*/
+.button::after {
+	content: "";
+	/*height: 100%;*/
+	/*width: 100%;*/
+	width: 100%;
+	height: 100%;
+	background-color: #F783CF;
+	position: absolute;
+	left: -100%;
+	top: 0;
+	transition: 0.5s all;
+	z-index: 0;
+}
+
+.button > h3 > a:visited, .button > h3 > a:link {
+	z-index: 1;
+}
+
+.button:hover > h3 > a:visited, .button:hover > h3 > a:link {
+	color: white;
+}
+
+.button:hover::after {
+	left: 0;
+}
+
+
+.button > h3 {
+	font-size: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+.button > h3 > a {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s all;
+}
