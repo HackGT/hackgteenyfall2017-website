@@ -270,6 +270,7 @@ a:visited {
 
 .button > h3 > a:visited, .button > h3 > a:link {
 	z-index: 1;
+	text-decoration: none;
 }
 
 .button:hover > h3 > a:visited, .button:hover > h3 > a:link {
