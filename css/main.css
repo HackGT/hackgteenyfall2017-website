@@ -9,7 +9,9 @@ html, body {
 }
 
 #header-img {
-	max-height: 75%;
+	max-height: 80%;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 body {
