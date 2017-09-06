@@ -1,2 +1,2 @@
-# hackg2ny
-Website for the second HackGTeeny 2017
+# hackgteenyfall2017-website
+Website for the Fall 2017 HackGTeeny workshop marathon!

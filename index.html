@@ -6,22 +6,20 @@
 		<meta property="og:title" content="HackGTeeny" />
 		<meta property="og:image" content="https://teeny.hack.gt/assets/preview.png" />
 		<meta property="og:url" content="https://teeny.hack.gt/" />
-		<meta property="og:description" content="HackGTeeny is an annual hackathon oriented towards beginner hackers at Georgia Tech. Learn the basics of hacking with our workshops" />
+		<meta property="og:description" content="HackGTeeny is a event designed for beginner hackers at Georgia Tech. Learn the basics of hacking with our workshops" />
 		<meta name="theme-color" content="#332A4D" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-		<base target="_blank" />
+		<base target="_blank"/>
 	</head>
 	<body>
 		<header id="first-page">
 			<img src="./assets/preview.png"/ id="header-img">
 			<br />
 
-
-			
 			<div id="details">
 				<div id="apply" class="button">
 					<h3>
@@ -39,8 +37,9 @@
 
 		<section id="info">
 			<h1>Info</h1>
+      <p>Looking to jump start your CS career? Trying to boost your resume before career fair and future hackathons?</p>
+      <p>Look no further! HackGT presents HackGTeeny, a series of beginner workshops to introduce critical skills for application development. Hosted by Georgia Tech's favorite hackathon, we're offering a 5 hour, hands-on, mentor-guided grind for students with some (but not extensive) coding experience.</p>
 
-			<p>HackGTeeny is an annual hackathon oriented towards beginner hackers at Georgia Tech. You can learn the basics of hacking with our workshops, which focus on topics such as web and mobile app development!<p>
 		</section>
 		<section id="schedule">
 			<h1>Schedule</h1>
@@ -73,7 +72,7 @@
 					</tr>
 					<tr>
 						<td>4:00 PM</td>
-						<td>API Workshop / 1.5 hours</td>
+						<td>API Workshop / 1 hour</td>
 					</tr>
 					<tr>
 						<td>5:00 PM</td>
@@ -91,19 +90,11 @@
 			<ul>
 				<li>
 					<strong>Who is eligible?</strong>
-					<p>As long as you're a current Georgia Tech student, you're eligible. No prior experience is required! Teams can be up to four members &mdash; you can <a href="http://registration.teeny.hack.gt">register</a> with your team or create a team at the event.</p>
+					<p>As long as you're a current Georgia Tech student, you're eligible. No prior experience is required! Just <a href="https://registration.teeny.hack.gt">register</a>!</p>
 				</li>
 				<li>
 					<strong>What should I bring?</strong>
-					<p>Bring your laptop, headphones, and anything else you need to hack comfortably. We'll supply hardware, snacks, and meals for the whole day. This hackathon won't last too long, but feel free to bring anything that makes you comfortable. If you're still not sure, ask us!</p>
-				</li>
-				<li>
-					<strong>How much does it cost?</strong>
-					<p>Everything at this hackathon is absolutely free. The only part that makes it worthwhile is your effort and determination. Indicate any needs in your application and we’ll reach out to take care of you.</p>
-				</li>
-				<li>
-					<strong>Can I use past projects?</strong>
-					<p>As said before, the universe discourages it because it’s an illusion of true innovation. Well maybe, but we'll be teaching you a better way to hack and build your own projects, so why take all the fun away?</p>
+					<p>Bring your laptop (and charger!), headphones, and anything else you need to work comfortably. We'll supply lunch. If you're still not sure, ask us on <a href="https://facebook.com/hackgt">Facebook</a> or <a href="mailto:hello@hackgt.com?Subject=Question%20about%20HackGTeeny">email</a>!</p>
 				</li>
 				<li>
 					<strong>Where do I go?</strong>
@@ -138,8 +129,8 @@
 				var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
 				return isVisible;
 			}
-			
-			var firstPage = document.getElementById("first-page");
+
+      var firstPage = document.getElementById("first-page");
 			var hideScrollIndicatorClass = "hide-scroll-indicator";
 
 			var sections = ["first-page", "info", "schedule", "faq", "sponsors"].map(function (id) {
