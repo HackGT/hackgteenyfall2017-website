@@ -144,7 +144,7 @@ td:nth-child(2) {
 section > h1 {
 	letter-spacing: 2px;
 }
-h3.details {
+#details {
 	font-size: 2em;
 	letter-spacing: 1px;
 	position: absolute;
@@ -226,12 +226,9 @@ h3.details {
     height: 128px;
 }
 
-a:link {
-    color: #F783CF;
-}
-
-a:visited {
-    color: #F783CF;
+a:link, a:visited {
+    color: white;
+    font-weight: bold;
 }
 
 .button {
@@ -241,7 +238,6 @@ a:visited {
 	border-radius: 0.25em;
 	background-color: rgba(255, 255, 255,0);
 	background-color: white;
-
 	/*height:10px;*/
 	/*width:50px;*/
 	cursor:pointer;
@@ -271,6 +267,7 @@ a:visited {
 .button > h3 > a:visited, .button > h3 > a:link {
 	z-index: 1;
 	text-decoration: none;
+	color: #F783CF;
 }
 
 .button:hover > h3 > a:visited, .button:hover > h3 > a:link {
@@ -283,7 +280,7 @@ a:visited {
 
 
 .button > h3 {
-	font-size: 2em;
+	font-size: 1em;
 	padding: 0;
 	margin: 0;
 }
